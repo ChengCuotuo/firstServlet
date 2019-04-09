@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>computer1</servlet-name>
+        <servlet-class>myservlet.control.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>computer1</servlet-name>
+        <url-pattern>/computerSum1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>computer2</servlet-name>
+        <servlet-class>myservlet.control.Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>computer2</servlet-name>
+        <url-pattern>/computerSum2</url-pattern>
+    </servlet-mapping>
+</web-app>
